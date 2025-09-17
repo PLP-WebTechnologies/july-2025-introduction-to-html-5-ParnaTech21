@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A sample HTML5 webpage demonstrating semantic structure, accessibility best practices, and SEO basics.">
+  <meta name="keywords" content="HTML5, accessibility, SEO, semantic, web development">
+  <meta name="author" content="Your Name">
+  <title>HTML5 Accessibility & SEO Basics</title>
+</head>
+<body>
+  <!-- Header landmark -->
+  <header>
+    <h1>Welcome to My Accessible & SEO-Friendly Page</h1>
+    <p>This page demonstrates HTML5 semantic structure, accessibility, and SEO fundamentals.</p>
+  </header>
+
+  <!-- Navigation landmark -->
+  <nav aria-label="Main Navigation">
+    <ul>
+      <li><a href="#about" title="Learn about this page">About</a></li>
+      <li><a href="#articles" title="Read educational articles">Articles</a></li>
+      <li><a href="#contact" title="Get in touch">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main content landmark -->
+  <main>
+    <!-- About Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About This Page</h2>
+      <p>
+        This is a simple demonstration of how semantic HTML5 structure improves 
+        both <strong>accessibility</strong> for screen readers and <strong>SEO</strong> for search engines.
+      </p>
+    </section>
+
+    <!-- Articles Section -->
+    <section id="articles" aria-labelledby="articles-heading">
+      <h2 id="articles-heading">Educational Articles</h2>
+
+      <article aria-labelledby="article1-title">
+        <h3 id="article1-title">The Importance of Semantic HTML</h3>
+        <p>
+          Semantic tags like <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and 
+          <code>&lt;footer&gt;</code> give meaning to content, making it easier for assistive 
+          technologies and search engines to understand your page.
+        </p>
+      </article>
+
+      <article aria-labelledby="article2-title">
+        <h3 id="article2-title">Accessibility Best Practices</h3>
+        <p>
+          Adding attributes like <code>aria-label</code> and ensuring heading levels follow 
+          a logical order improves usability for screen reader users.
+        </p>
+      </article>
+
+      <article aria-labelledby="article3-title">
+        <h3 id="article3-title">SEO Basics for Beginners</h3>
+        <p>
+          Search engines prioritize well-structured, human-readable content with 
+          relevant headings, descriptive text, and proper metadata.
+        </p>
+      </article>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>If you’d like to connect, please reach out via:</p>
+      <address>
+        <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+        <p>Location: Kampala, Uganda</p>
+      </address>
+    </section>
+  </main>
+
+  <!-- Footer landmark -->
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+    <nav aria-label="Footer Navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#articles">Articles</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </footer>
+</body>
+</html>
